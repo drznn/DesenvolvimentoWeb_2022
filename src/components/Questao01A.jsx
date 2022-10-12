@@ -2,13 +2,16 @@ function Questao01A() {
     let aluno = ['André', 'Albuquerque ',' Engenharia de Software ']
 
     return (
-        aluno.map(
+        <div className="d-flex">
+        {aluno.map(
             (object) => {
                 return (
-                    <h1 key={object}>{object}</h1>
+        
+                    <h1 className="p-2" key={object}>{object}</h1>
                 )
             }
-        )
+        )}
+        </div>
     )
 
 }

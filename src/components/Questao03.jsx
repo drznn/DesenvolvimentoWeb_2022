@@ -33,7 +33,7 @@ function Questao03() {
                     }
                 )
             }
-            <button onClick={
+            <button type='button' className='btn btn-primary m-2' onClick={
                 (event) => {
                     getPokemons()
                 }

@@ -77,7 +77,7 @@ function Questao05() {
             {renderPopulationText()}
             <p> E sua população é de : {populationCount} </p>
 
-            <button onClick={
+            <button className='btn btn-primary m-2' onClick={
                 () => {
                     setSelectedCountry('americas');
                 }
@@ -85,7 +85,8 @@ function Questao05() {
                 Americas
             </button>
 
-            <button onClick={
+            <button className='btn btn-primary m-2' 
+            onClick={
                 () => {
                     setSelectedCountry('asia')
                 }

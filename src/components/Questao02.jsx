@@ -9,62 +9,64 @@ function Questao02() {
 
     return (
         <div>
-            <input
-                type='text'
-                placeholder='Numero 1'
-                onChange={
-                    (event) => {
-                        setNumero1(parseInt(event.target.value))
+            <div className='d-block p-4'>
+                <input type="text" className="form-control" style={{width:'150px'}}
+                    placeholder='Numero 1'
+                    onChange={
+                        (event) => {
+                            setNumero1(parseInt(event.target.value))
+                        }
                     }
-                }
-            />
-            <input
-                type='text'
-                placeholder='Numero 2'
-                onChange={
-                    (event) => {
-                        setNumero2(parseInt(event.target.value))
+                />
+                <input
+                    type="text" className="form-control" style={{width:'150px'}}
+                    placeholder='Numero 2'
+                    onChange={
+                        (event) => {
+                            setNumero2(parseInt(event.target.value))
+                        }
                     }
-                }
-            />
-
-            <input
-                type='button'
-                value='+'
-                onClick={
-                    (event) => {
-                        setResultado(numero1+numero2)
+                />
+            </div>
+            <div class="d-flex p-4">
+                <button className='btn btn-primary m-2'
+                    type='button'
+                    value='+'
+                    onClick={
+                        (event) => {
+                            setResultado(numero1 + numero2)
+                        }
                     }
-                }
-            />
-            <input
-                type='button'
-                value='-'
-                onClick={
-                    (event) => {
-                        setResultado(numero1-numero2)
+                >+</button>
+                <button className='btn btn-primary m-2'
+                    type='button'
+                    value='-'
+                    onClick={
+                        (event) => {
+                            setResultado(numero1 - numero2)
+                        }
                     }
-                }
-            />
-            <input
-                type='button'
-                value='*'
-                onClick={
-                    (event) => {
-                        setResultado(numero1*numero2)
+                >-</button>
+                <button className='btn btn-primary m-2'
+                    type='button'
+                    value='*'
+                    onClick={
+                        (event) => {
+                            setResultado(numero1 * numero2)
+                        }
                     }
-                }
-            />
-            <input
-                type='button'
-                value='/'
-                onClick={
-                    (event) => {
-                        setResultado(numero1/numero2)
+                >*</button>
+                <button className='btn btn-primary m-2'
+                    type='button'
+                    value='/'
+                    onClick={
+                        (event) => {
+                            setResultado(numero1 / numero2)
+                        }
                     }
-                }
-            />
-        <h3>Resultado : {resultado}</h3>
+                >/</button>
+            </div>
+            <h3>Resultado : {resultado}</h3>
         </div>
     )
 }
